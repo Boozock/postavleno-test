@@ -1,14 +1,31 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <Home />
+
+    <notifications />
   </div>
 </template>
 
+<script>
+import Home from "@/views/Home";
+
+export default {
+  name: 'App',
+  components: {
+    Home,
+  },
+}
+</script>
+
 <style lang="scss">
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  margin: 0px;
+  padding: 10px;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,17 +33,7 @@
   text-align: center;
   color: #2c3e50;
 }
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+button {
+  cursor: pointer;
 }
 </style>
