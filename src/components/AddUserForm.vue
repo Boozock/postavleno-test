@@ -49,7 +49,7 @@ export default {
                 }
             }
 
-            this.addUser(this.newUser);
+            this.$emit("addUser", this.newUser);
 
             this.newUser = { ...this.initUserData };
         }

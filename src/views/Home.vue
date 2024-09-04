@@ -4,7 +4,7 @@
     <h1>Добавить пользователя:</h1>
 
     <AddUserForm
-      :addUser="addUser"
+      @addUser="addUser"
       :initUserData="clearUser"
     />
 
