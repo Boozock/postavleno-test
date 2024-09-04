@@ -29,7 +29,7 @@
 <script>
 export default {
     name: "AddUserForm",
-    props: ["addUser", "initUserData"],
+    props: ["initUserData"],
     data(){
         return {
             newUser: {
